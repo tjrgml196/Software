@@ -5,5 +5,5 @@
 * 수업 : **공개소프트웨어소개**  
 * 학번 : **2016080073**  
 * 이름 : **조석희**  
-* 주소 : https://github.com/tjrgml196/Software/blob/master/README.md  
+* 주소 : https://github.com/tjrgml196/  
 ------------------------
