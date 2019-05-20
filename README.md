@@ -23,5 +23,5 @@
      + 예제 : addi $1, $2, 10  
    - Subtract  
      + 형식 : sub rd, rs, rt
-       *rd, rs, rt : $0 ~ $31  
+       * rd, rs, rt : $0 ~ $31  
      + 예제 : sub $30, $20, $15  
