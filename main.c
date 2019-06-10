@@ -10,7 +10,10 @@
 
 #define MAX_LENGTH 100
 #include <stdio.h>
-
+struct char instruction{
+	char inst[30];
+	char inst_sub[30];
+}//파일로부터 불러온 명령어를 담을 instruction 구조체
 
 int main(void) {
 	
@@ -18,7 +21,7 @@ int main(void) {
 	char buffer[MAX_LENGTH];					//
 	FILE* p_file = NULL;						//
 
-	if (fopen_s(&p_file, "mips.txt", "r") == 0) {		// fopen_s 는 파일이 열리면 0을 반환
+	if (fopen_s(&p_file, "mips.txt", "r+") == 0) {		// fopen_s 는 파일이 열리면 0을 반환
 
 		while (fgets(buffer, MAX_LENGTH, p_file) != NULL) {
 			line_count++;
@@ -29,6 +32,8 @@ int main(void) {
 	}
 	else
 		printf("파일이 잘못되었습니다.\n");
+	printf("<명령어 파싱 결과>");
+
 
 
 	return 0;
