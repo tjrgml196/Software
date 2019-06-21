@@ -7,9 +7,14 @@
 
 
 */
-
 #define MAX_LENGTH 100
 #include <stdio.h>
+#define SIZE 100
+//문자열을 파싱하는 함수
+void devide(char ch[50], SIZE) {
+	printf("%s", ch);
+}
+
 struct char instruction{
 	char inst[30];
 	char inst_sub[30];
@@ -21,6 +26,8 @@ int main(void) {
 	char buffer[MAX_LENGTH];					//
 	FILE* p_file = NULL;						//
 
+	printf("명령어를 파싱하는 프로그램입니다.");
+	printf("명령어를 파일으로 읽어들여서 자동으로 파싱해줍니다");
 	if (fopen_s(&p_file, "mips.txt", "r+") == 0) {		// fopen_s 는 파일이 열리면 0을 반환
 
 		while (fgets(buffer, MAX_LENGTH, p_file) != NULL) {
